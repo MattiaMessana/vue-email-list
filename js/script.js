@@ -18,7 +18,9 @@ createApp({
                     .then((resp) => { 
                         console.log(resp.data.response);
                         this.mailsList.push(resp.data.response);
-                        this.isLoading = false;
+                        if (this.mailsList.length === 10){
+                            this.isLoading = false;
+                        }
                       })
                     this.mailsList = [];
             }
