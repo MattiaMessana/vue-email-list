@@ -19,7 +19,7 @@ createApp({
                         console.log(resp.data.response);
                         this.mailsList.push(resp.data.response);
                         this.isLoading = false;
-                    })
+                      })
                     this.mailsList = [];
             }
          },
